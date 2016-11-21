@@ -9,8 +9,11 @@
 <body>
   <div id="content"></div>
   <script>
-    document.getElementById('content').innerHTML =
-      marked('# Marked in browser\n\nRendered by **marked**.');
+    jQuery.get('https://raw.githubusercontent.com/BKLaughton/AnotherDayInTheWasteland/master/entries/entry_1.html', function(data) {
+      document.getElementById('content').innerHTML =
+        marked(data);
+    });
+    
   </script>
 </body>
 </html>
