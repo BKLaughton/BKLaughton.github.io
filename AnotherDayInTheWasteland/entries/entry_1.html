@@ -9,7 +9,12 @@
 <body>
   <div id="content"></div>
   <script>
-    jQuery.get('https://raw.githubusercontent.com/BKLaughton/AnotherDayInTheWasteland/master/entries/entry_1.html', function(data) {
+    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/AnotherDayInTheWasteland/master/entries/entry_1.html';
+    var random = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
+    
+    linkedFIle = linkedFile + '#' +  random;
+    
+    jQuery.get(linkedFile, function(data) {
       document.getElementById('content').innerHTML =
         marked(data);
     });
