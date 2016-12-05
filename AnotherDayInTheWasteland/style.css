@@ -1,0 +1,16 @@
+body {
+    background-color: #0d1a00;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffcc00;
+    }
+hr {
+    border-color: #ffcc00;
+}
+h1 {
+    color: #ffcc00;        
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+}
+a {
+    color: #ffcc00;
+}
