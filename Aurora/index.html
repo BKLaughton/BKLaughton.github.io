@@ -5,6 +5,7 @@
   <title>Marked in the browser</title>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="../../lib/marked.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <style>
   body {
       background-color: lightblue;
@@ -15,7 +16,7 @@
       color: white;
       text-align: center;
       
-      font-family: Gadget, san-serif, verdana;
+      font-family: 'Amatic SC', cursive;
       font-size: 40px;
   }
 
@@ -27,7 +28,7 @@
 <body>
   <div id="content"></div>
   <script>
-    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/AuroraAeternis/master/README.md';
+    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/Aurora/master/README.md';
     
     jQuery.get(linkedFile, function(data) {
       document.getElementById('content').innerHTML =
