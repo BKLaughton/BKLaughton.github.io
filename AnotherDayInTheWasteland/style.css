@@ -2,7 +2,6 @@ body {
     background-color: #0d1a00;
     font-family: 'Share Tech Mono', monospace;
     color: #ffcc00;
-    class: font-effect-anaglyph
     }
 hr {
     border-color: #ffcc00;
@@ -11,6 +10,7 @@ h1 {
     color: #ffcc00;        
     font-family: 'Share Tech Mono', monospace;
     font-size: 40px;
+    class: font-effect-anaglyph
 }
 a {
     color: #ffcc00;
