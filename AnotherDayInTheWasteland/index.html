@@ -16,7 +16,7 @@
     var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
     
     jQuery.get(header, function(data) {
-      document.getElementById('content').innerHTML += marked(data);
+      document.getElementById('content').innerHTML = marked(data);
     });
     
     jQuery.get(linkedFile, function(data) {
