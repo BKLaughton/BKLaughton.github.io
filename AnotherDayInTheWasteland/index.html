@@ -15,6 +15,8 @@
     var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/AnotherDayInTheWasteland/master/README.md';
     var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
     
+    jQuery.ajaxSetup({async:false});
+    
     jQuery.get(header, function(data) {
       document.getElementById('content').innerHTML = marked(data);
     });
@@ -26,6 +28,8 @@
     jQuery.get(footer, function(data) {
       document.getElementById('content').innerHTML += marked(data);
     });
+    
+    jQuery.ajaxSetup({async:true});
     
   </script>
 </body>
