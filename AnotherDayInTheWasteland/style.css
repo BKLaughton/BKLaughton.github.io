@@ -70,3 +70,23 @@ a {
     color: #ffcc00;
   }
 }
+
+.scanLines {
+  background: -webkit-repeating-linear-gradient(
+    top,
+    transparent 0px,
+    transparent $scanLineWidth,
+    rgba(0,0,0,0.25) $scanLineWidth,
+    rgba(0,0,0,0.25) $scanLineWidth*2
+  );
+  -webkit-background-size: 100% $scanLineWidth*2;
+    
+  background: -moz-repeating-linear-gradient(
+    top,
+    transparent 0px,
+    transparent $scanLineWidth,
+    rgba(0,0,0,0.25) $scanLineWidth,
+    rgba(0,0,0,0.25) $scanLineWidth*2
+  );
+  -moz-background-size: 100% $scanLineWidth*2;
+}
