@@ -1,2 +1,4 @@
-# Another day in the wasteland<span class="blinking-cursor">&#8718;</span>
+# [Another day in the wasteland](http://bklaughton.com/AnotherDayInTheWasteland/)<span class="blinking-cursor">&#8718;</span>
+---
+Example|Navigation | Bar | Options |
 ---
