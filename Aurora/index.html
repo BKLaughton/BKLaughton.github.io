@@ -29,10 +29,17 @@
   <div id="content"></div>
   <script>
     var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/Aurora/master/README.md';
+    var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
+     
+    jQuery.ajaxSetup({async:false});
     
     jQuery.get(linkedFile, function(data) {
       document.getElementById('content').innerHTML =
         marked(data);
+    });
+    
+       jQuery.get(footer, function(data) {
+      document.getElementById('content').innerHTML += marked(data);
     });
     
   </script>
