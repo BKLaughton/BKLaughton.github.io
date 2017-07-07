@@ -1,0 +1,30 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>B.K. Laughton – Material, Complexity, Size – D20 Crafting</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../../lib/marked.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/RPGhomebrew/master/MaterialComlexitySizeD20Crafting/README.md';
+    var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
+    
+    jQuery.ajaxSetup({async:false});
+    
+    jQuery.get(linkedFile, function(data) {
+      document.getElementById('content').innerHTML =
+        marked(data);
+    });
+    
+    jQuery.get(footer, function(data) {
+      document.getElementById('content').innerHTML += marked(data);
+    });
+    
+  </script>
+</body>
+</html>
