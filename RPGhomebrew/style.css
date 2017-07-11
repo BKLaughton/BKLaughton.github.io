@@ -56,3 +56,7 @@ th {
 }
 
 tr:nth-child(even){background-color: #e2dca5}
+
+td {
+    font-size: small;
+    }
