@@ -60,3 +60,7 @@ tr:nth-child(even){background-color: #e2dca5}
 td {
     font-size: small;
     }
+
+blockquote { 
+    background: #e2dca5;
+}
