@@ -70,5 +70,6 @@ code {
     margin-left: 40px;
     margin-right: 40px;
     border-style: solid;
-    border-color: 7f7154;  
+    border-color: #7f7154;
+    padding: 8px;
     }
