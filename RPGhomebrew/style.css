@@ -1,0 +1,54 @@
+body {
+    background-color: #fcf9de;
+    font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    color: #493d23;
+    }
+    
+hr {
+    border-color: #493d23;
+}
+
+h1 {
+    color: #493d23;        
+    font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    font-size: 250%;
+}
+
+h2 {
+    color: #493d23;        
+    font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    font-size: 200%;
+}
+
+h3 {
+    color: #7f7154;        
+    font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+h4 {
+    color: #7f7154;        
+    font-family: "Book Antiqua", "Palatino Linotype", Palatino, serif;
+    font-size: 150%;
+}
+
+a {
+    color: #487787;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    background-color: #7f7154;
+    color: white;
+}
+
+tr:nth-child(even){background-color: #e2dca5}
