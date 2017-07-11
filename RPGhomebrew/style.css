@@ -65,3 +65,10 @@ blockquote {
     background: #e2dca5;
     padding: 20px;
 }
+
+code {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-style: solid;
+    border-color: 7f7154;  
+    }
