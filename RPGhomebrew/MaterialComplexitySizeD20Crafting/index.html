@@ -23,8 +23,7 @@
     });
     
     jQuery.get(linkedFile, function(data) {
-      document.getElementById('content').innerHTML =
-        marked(data);
+      document.getElementById('content').innerHTML += marked(data);
     });
     
     jQuery.get(footer, function(data) {
