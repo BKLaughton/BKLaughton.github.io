@@ -10,10 +10,15 @@
 <body>
   <div id="content"></div>
   <script>
+    var header = 'https://raw.githubusercontent.com/BKLaughton/RPGhomebrew/master/header.md';
     var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/RPGhomebrew/master/README.md';
     var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
     
     jQuery.ajaxSetup({async:false});
+    
+    jQuery.get(header, function(data) {
+      document.getElementById('content').innerHTML = marked(data);
+    });
     
     jQuery.get(linkedFile, function(data) {
       document.getElementById('content').innerHTML =
