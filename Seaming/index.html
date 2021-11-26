@@ -1,23 +1,36 @@
+<!doctype html>
 <html>
 <head>
-<style>
-p.strong {
-  font-size: 50px;
-}
-p.content {
-  font-size: 15px;
-}
-</style>
+  <meta charset="utf-8"/>
+  <title>Double Seaming Resources</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://bklaughton.com/Seaming/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../../lib/marked.js"></script>
+</head>
 <body>
-<p class="strong">Canning links</p>
-<p class="content">
-<a href="https://www.qualitycanseams.com/">Quality Can Seams</a> - A small site with very clear and densely packed info. Great starting point following the Cask tutorial vids.
-<br>
-<a href="https://seamschool.com/">Seam school</a> - handy site with a lot of visual guides as well as historical trivia on double-seam canning
-<br>
-<a href="https://www.levapack.com/double-seaming-guide/">Levapack double seaming guide</a> - Short page with some good clear diagrams of less common canning faults
-<br>
-<a href="https://doubleseam.com/">Doubleseam Troubleshooting Guide</a> - a neat open source resource for troubleshooting seaming with a well furnished glossary and abbrieviations page
-</p>
+  <div id="content"></div>
+  <script>
+    var header = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/Seaming/header.md';
+    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/Seaming/Content.md';
+    var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
+    
+    jQuery.ajaxSetup({async:false});
+    
+    jQuery.get(header, function(data) {
+      document.getElementById('content').innerHTML = marked(data);
+    });
+    
+    jQuery.get(linkedFile, function(data) {
+      document.getElementById('content').innerHTML += marked(data);
+    });
+    
+    jQuery.get(footer, function(data) {
+      document.getElementById('content').innerHTML += marked(data);
+    });
+    
+    jQuery.ajaxSetup({async:true});
+    
+  </script>
 </body>
 </html>
