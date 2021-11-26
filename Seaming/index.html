@@ -2,35 +2,97 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Double Seaming Resources</title>
-  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://bklaughton.com/Seaming/style.css">
+  <title>Seaming Links</title>
+  <style>
+    body {
+    background-color: #0d1504;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffcc00;
+    }
+hr {
+    border-color: #ffcc00;
+}
+h1 {
+    color: #ffcc00;        
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+}
+a {
+    color: #ffcc00;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 60px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffcc00;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffcc00;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffcc00;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffcc00;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #ffcc00;
+  }
+}
+  </style>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="../../lib/marked.js"></script>
 </head>
 <body>
-  <div id="content"></div>
-  <script>
-    var header = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/Seaming/header.md';
-    var linkedFile = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/Seaming/Content.html';
-    var footer = 'https://raw.githubusercontent.com/BKLaughton/BKLaughton.github.io/master/footer.md';
-    
-    jQuery.ajaxSetup({async:false});
-    
-    jQuery.get(header, function(data) {
-      document.getElementById('content').innerHTML = marked(data);
-    });
-    
-    jQuery.get(linkedFile, function(data) {
-      document.getElementById('content').innerHTML += marked(data);
-    });
-    
-    jQuery.get(footer, function(data) {
-      document.getElementById('content').innerHTML += marked(data);
-    });
-    
-    jQuery.ajaxSetup({async:true});
-    
-  </script>
+  <div id="content">
+  <p style="h1">Seaming links</p>
+  <span class="blinking-cursor">&#8718;</span>
+  <p style="content">
+  <a href="https://www.qualitycanseams.com/">Quality Can Seams</a> - A small site with very clear and densely packed info. Great starting point following the Cask tutorial vids.
+  <br>
+  <a href="https://seamschool.com/">Seam school</a> - handy site with a lot of visual guides as well as historical trivia on double-seam canning
+  <br>
+  <a href="https://www.levapack.com/double-seaming-guide/">Levapack double seaming guide</a> - Short page with some good clear diagrams of less common canning faults
+  <br>
+  <a href="https://doubleseam.com/">Doubleseam Troubleshooting Guide</a> - a neat open source resource for troubleshooting seaming with a well furnished glossary and abbrieviations page
+  </p>
+  </div>
 </body>
 </html>
